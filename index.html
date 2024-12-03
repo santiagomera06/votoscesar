@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elección de Representante de Aprendices</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <form id="formulario-sesion" ">
+            <h2>Iniciar Sesión</h2>
+            <label for="username">usuario:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">contraseña:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="button" id="iniciar-sesion" value="Iniciar Sesión">
+        </form>
+
+       
+        <main id="contenido-principal" style="display: none;">
+            <header>
+                <h1>Elecciónes de Representante</h1>
+                <button id="inicio-elecciones" disabled>Iniciar Elecciones</button>
+                <button id="cierre-elecciones" disabled>Cerrar Elecciones</button>
+            </header>
+            <section id="candidatos">
+                <script>
+                    Candidatos();
+                </script>
+            </section>  
+            <section id="resultados" style="display: none;">
+                <h2>Resultados de las Elecciones</h2>
+                <ul id="lista-resultados"></ul>
+            </section>
+        </main>
+
+        <div id="ventana-confirmacion" style="display: none;">
+            <p>¿Deseas confirmar el voto?</p>
+            <button id="confirmar-voto">Sí</button>
+            <button id="cancelar-voto">No</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+    </html>
+
+
+
+
